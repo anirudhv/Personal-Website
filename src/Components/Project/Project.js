@@ -1,0 +1,49 @@
+import React, {Component} from 'react';
+import {Button} from '@material-ui/core';
+import Papa from 'papaparse';
+class Project extends Component {
+	state = {
+		projects: [], 
+		click: 0,
+		clicked: false
+	}
+	componentDidMount() {
+		Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vSmpg_kTPLF1350moqMHiPI3f-68sOCMlwWGFVGnfLZaXcFBTufAqSIOTdBu9YFgtngHoeZM-NbzvJY/pub?output=csv", {
+		download:true,
+		header:true,
+		complete:(results) => {
+			this.setState({projects: results.data});
+		}});
+	}
+	clicked = (num) => {
+		this.setState({clicked: true});
+		this.props.history.push('/projects/' + num);
+	}
+	render() {
+		const data = this.state.projects;
+		return (
+			<div>
+			<h1>Please select a project to learn more about it and access it.</h1>
+			<h3>Technical Projects</h3>
+			{data.map((project, i) => (
+				<Button color = "primary" key = {i} id = {i} onClick = {() => this.clicked(i)}>
+				• {project.Name}
+				</Button>
+				))}
+			<h3>Other Projects</h3>
+			<Button color = "secondary" id = "datavis" href = "https://portfolium.com/AnirudhV/portfolio"
+				target = "_blank">	
+					• Data Visualization Portfolio
+			</Button>	
+			<Button color = "secondary" id = "3d" href = "https://sketchfab.com/anirudhv"
+				target = "_blank">	
+					• 3D Models (Autodesk Maya)
+			</Button>	
+			<h3>Graphic Designs</h3>
+			<div class="cincopa_responsive_iframe" styles={{padding: "56.25% 0 0 0", position: "relative"}}><div class="cincopa_responsive_wrapper" styles={{height:"100%", left: "0", position: "absolute", top: "0", width: "100%"}}><iframe title = "gallery" width="100%" height="100%" src="//www.cincopa.com/media-platform/iframe.aspx?fid=AQBAVduskGmu" frameborder="0" allowfullscreen scrolling="no"></iframe></div></div>
+			</div>
+		);
+	}
+}
+
+export default Project;

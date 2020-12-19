@@ -1,0 +1,23 @@
+.Linker {
+	text-decoration: none;
+	color:white;
+	font-size:20px;
+	margin-right:25px;
+	border:0.1px solid #ccc;
+	border-radius:20px;
+	padding-left:10px;
+	padding-right:10px;
+	justify-content:center;
+}
+
+.Linker:hover {
+	color:yellow;
+	background-color:black;
+}
+
+.Name {
+	color:#cdcdcd;
+	text-decoration:none;
+	font-size:20px;
+	font-weight:bold;
+}
