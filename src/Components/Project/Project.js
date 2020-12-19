@@ -40,7 +40,7 @@ class Project extends Component {
 					• 3D Models (Autodesk Maya)
 			</Button>	
 			<h3>Graphic Designs</h3>
-			<div class="cincopa_responsive_iframe" styles={{padding: "56.25% 0 0 0", position: "relative"}}><div class="cincopa_responsive_wrapper" styles={{height:"100%", left: "0", position: "absolute", top: "0", width: "100%"}}><iframe title = "gallery" width="100%" height="100%" src="//www.cincopa.com/media-platform/iframe.aspx?fid=AQBAVduskGmu" frameborder="0" allowfullscreen scrolling="no"></iframe></div></div>
+			<div class="cincopa_responsive_iframe" styles={{padding: "56.25% 0 0 0", position: "relative"}}><div class="cincopa_responsive_wrapper" styles={{height:"100%", left: "0", position: "absolute", top: "0", width: "100%"}}><iframe title = "gallery" width="100%" height="750px" src="//www.cincopa.com/media-platform/iframe.aspx?fid=AQBAVduskGmu" frameborder="0" allowfullscreen scrolling="no"></iframe></div></div>
 			</div>
 		);
 	}
