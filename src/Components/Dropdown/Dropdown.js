@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Accordion, AccordionDetails, AccordionSummary, Typography} from '@material-ui/core';
-import {Add, Remove} from '@material-ui/icons';
+import {Add, Close} from '@material-ui/icons';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -26,7 +26,7 @@ const Dropdown = (props) => {
 
 	const handleChange = (panel) => (event, isExpanded) => {
 	setExpanded(isExpanded ? panel : false);
-	setIcon(isExpanded ? <Remove /> : <Add />);
+	setIcon(isExpanded ? <Close /> : <Add />);
 	}
 
   return (

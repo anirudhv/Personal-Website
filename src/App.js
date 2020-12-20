@@ -20,7 +20,6 @@ function App() {
       <Route exact path = "/coursework" component = {Coursework} />
       <br />
       <br />
-      <br />
       <Footer />
     </div>
   );

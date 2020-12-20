@@ -44,7 +44,7 @@ const ProjectInfo = (props) => {
 			</Button>
 	        </Card>
 		</div>
-		{data.Video !== "No" ? <div><p><b>Demo</b></p><iframe title = "demo" width="560" height="315" src= {link} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> : null}
+		{data.Video !== "No" ? <div><p><b>Demo</b></p><iframe title = "demo" width="80%" height="315px" src= {link} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> : null}
 		</div>
 
 	);
