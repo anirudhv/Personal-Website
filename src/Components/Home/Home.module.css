@@ -4,6 +4,6 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    background-color:white !important;
+    background-color:#dffffa !important;
     overflow: hidden;
 }
