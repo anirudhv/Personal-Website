@@ -34,13 +34,13 @@ const Skills = () => {
       <Table aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell align="right">Backend Lanaguages</StyledTableCell>
-            <StyledTableCell align="right">Frontend Languages</StyledTableCell>
-            <StyledTableCell align="right">Frameworks/Libraries</StyledTableCell>
-            <StyledTableCell align="right">Deployments</StyledTableCell>
-            <StyledTableCell align="right">Software Tools</StyledTableCell>
-            <StyledTableCell align="right">Software Testing</StyledTableCell>
-            <StyledTableCell align="right">Graphics</StyledTableCell>
+            <StyledTableCell align="left">Backend Lanaguages</StyledTableCell>
+            <StyledTableCell align="left">Frontend Languages</StyledTableCell>
+            <StyledTableCell align="left">Frameworks/Libraries</StyledTableCell>
+            <StyledTableCell align="left">Deployments</StyledTableCell>
+            <StyledTableCell align="left">Software Tools</StyledTableCell>
+            <StyledTableCell align="left">Software Testing</StyledTableCell>
+            <StyledTableCell align="left">Graphics</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>

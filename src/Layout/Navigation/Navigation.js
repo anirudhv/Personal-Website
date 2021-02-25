@@ -18,7 +18,7 @@ const Navigation = (props) => {
   	 <div className = {classes.Navigation}>
       <Navbar color="dark" dark expand="lg">
         <NavbarBrand> 
-        <Avatar alt = "Anirudh Venkataramanan" src = "images/Me.png" />
+        <Avatar alt = "Anirudh Venkataramanan" src = "images/anirudh.jpg" />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
