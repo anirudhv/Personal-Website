@@ -24,7 +24,7 @@ class Project extends Component {
 	render() {
 		const data = this.state.projects;
 		return (
-			<div>
+			<div id = "project">
 			<h1>Please select a project to learn more about it and access it.</h1>
 			<h3>Technical Projects</h3>
 			{data.map((project, i) => (

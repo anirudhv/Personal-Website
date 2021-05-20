@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Papa from 'papaparse';
 import {Card, CardTitle, CardText} from 'reactstrap';
 import {Button} from '@material-ui/core';
+import modules from './ProjectInfo.module.css';
 
 const ProjectInfo = (props) => {
 	const path  = parseInt(props.location.pathname.split("/")[2]);
@@ -12,15 +13,21 @@ const ProjectInfo = (props) => {
 		complete:(results) => {
 			setData(results.data[path]);
 			if(results.data[path] === undefined) {
-				props.history.push('/projects');
+				props.history.push('/Project' + path + 'NotFound');
+				setData(results.data[1]);
 			}
 		}});
-	const link = "https://www.youtube.com/embed/" + data.Video;
-	const code = "https://github.com/anirudhv/" + data.Code;
-	const download = "https://bit.ly/" + data.Download;
+	let link = '';
+	let code = '';
+	let download = '';
+	if(data !== undefined) {
+	 link = "https://www.youtube.com/embed/" + data.Video;
+	 code = "https://github.com/anirudhv/" + data.Code;
+	 download = "https://bit.ly/" + data.Download;
+	} 
 
 	return(
-		<div>
+		<div id = {modules.project}>
 		<h2>{data.Name}</h2>
 		<h5>{data.Team}</h5>
 		<p><b>Technologies: </b>{data.Technologies}</p>

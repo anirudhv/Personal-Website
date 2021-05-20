@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import modules from './Coursework.module.css';
 import Papa from 'papaparse';
 
 
@@ -11,17 +12,13 @@ const Coursework = (props) => {
 				setData(results.data);
 			}});
 	return(
-		<div>
 		<center>
-
+		<div id = {modules.coursework}>
         		{data.map((course, i) => (
-        			/*<ListItem button key={i}>
-        				<ListItemText primary={course.Coursework} />
-        			</ListItem>*/
-        			<p key = {i}><b>{course.Coursework}</b></p>
+        				<p class = {modules.item} key = {i}><b>&nbsp;{course.Coursework}</b></p>
         			))}
-        		</center>
 		</div>
+		</center>
 	);
 }
 

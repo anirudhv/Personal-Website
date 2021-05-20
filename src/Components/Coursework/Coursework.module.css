@@ -1,0 +1,11 @@
+#coursework {
+	width:50%;
+	margin:1%;
+}
+
+.item {
+	border-left: 3px solid crimson;
+	width:auto;
+	text-decoration:none;
+	text-align:left;
+}
