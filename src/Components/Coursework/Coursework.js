@@ -15,7 +15,7 @@ const Coursework = (props) => {
 		<center>
 		<div id = {modules.coursework}>
         		{data.map((course, i) => (
-        				<p class = {modules.item} key = {i}><b>&nbsp;{course.Coursework}</b></p>
+        				<p className = {modules.item} key = {i}><b>&nbsp;{course.Coursework}</b></p>
         			))}
 		</div>
 		</center>

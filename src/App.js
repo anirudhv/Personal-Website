@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Navigation from './Layout/Navigation/Navigation';
 import {Route, Switch} from 'react-router-dom';
@@ -9,7 +10,8 @@ import Skills from './Components/Skills/Skills';
 import Footer from './Layout/Footer/Footer';
 import Coursework from './Components/Coursework/Coursework';
 import NotFound from './Components/NotFound/NotFound';
-const App = () => (
+const App = () => {
+  return(
     <div className="App">
       <Navigation />
       <Switch>
@@ -25,5 +27,6 @@ const App = () => (
       <br />
       <Footer />
     </div>
-  );
+    );
+  };
 export default App;
