@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 import {Button} from '@material-ui/core';
 import Papa from 'papaparse';
 import './Project.css';
+import Spinner from '../Spinner/Spinner';
 
 class Project extends Component {
 	state = {
 		projects: [], 
-		click: 0,
-		clicked: false
+		loading: true
 	}
 	componentDidMount() {
 		Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vSmpg_kTPLF1350moqMHiPI3f-68sOCMlwWGFVGnfLZaXcFBTufAqSIOTdBu9YFgtngHoeZM-NbzvJY/pub?output=csv", {
@@ -15,14 +15,17 @@ class Project extends Component {
 		header:true,
 		complete:(results) => {
 			this.setState({projects: results.data});
+			this.setState({loading: false});
 		}});
 	}
 	clicked = (num) => {
-		this.setState({clicked: true});
 		this.props.history.push('/projects/' + num);
 	}
 	render() {
 		const data = this.state.projects;
+		if(this.state.loading) {
+			return <Spinner />
+		}
 		return (
 			<div id = "project">
 			<h1>Please select a project to learn more about it and access it.</h1>

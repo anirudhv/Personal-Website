@@ -3,9 +3,11 @@ import Papa from 'papaparse';
 import {Card, CardTitle, CardText} from 'reactstrap';
 import {Button} from '@material-ui/core';
 import modules from './ProjectInfo.module.css';
+import Spinner from '../../Spinner/Spinner';
 
 const ProjectInfo = (props) => {
 	const path  = parseInt(props.location.pathname.split("/")[2]);
+	const[loading, setLoading] = useState(true);
 	const[name, setName] = useState('Loading...');
 	const[about, setAbout] = useState('Loading...');
 	const[technologies, setTechnologies] = useState('Loading...');
@@ -15,26 +17,37 @@ const ProjectInfo = (props) => {
 	const[code, setCode] = useState('/');
 	const[download, setDownload] = useState('/');
 
-		Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vSmpg_kTPLF1350moqMHiPI3f-68sOCMlwWGFVGnfLZaXcFBTufAqSIOTdBu9YFgtngHoeZM-NbzvJY/pub?output=csv", {
-			download:true,
-			header:true,
-			complete:(results) => {
-				const data = results.data[path];
-				console.log(data);
-				if(data !== undefined) {
-					setName(data.Name);
-					setAbout(data.About);
-					setTechnologies(data.Technologies);
-					setTeam(data.Team);
-					setVideo("https://www.youtube.com/embed/" + data.Video);
-					setLink(data.Link);
-					setCode("https://github.com/anirudhv/" + data.Code);
-					setDownload("https://bit.ly/" + data.Download);
+	Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vSmpg_kTPLF1350moqMHiPI3f-68sOCMlwWGFVGnfLZaXcFBTufAqSIOTdBu9YFgtngHoeZM-NbzvJY/pub?output=csv", {
+		download:true,
+		header:true,
+		complete:(results) => {
+			const data = results.data[path];
+			console.log(data);
+			if(data !== undefined) {
+				setLoading(false);
+				setName(data.Name);
+				setAbout(data.About);
+				setTechnologies(data.Technologies);
+				setTeam(data.Team);
+				if(data.Video === 'No') {
+					setVideo(data.Video);
 				} else {
-					props.history.push('/projects');
+					setVideo("https://www.youtube.com/embed/" + data.Video);
 				}
-			}}); 
-
+				setLink(data.Link);
+				setCode("https://github.com/anirudhv/" + data.Code);
+			if(data.Download === '-') {
+				setDownload(data.Download);
+				} else {
+				setDownload("https://bit.ly/" + data.Download);
+				}
+			} else {
+				props.history.push('/projects');
+			}
+		}}); 
+	if(loading) {
+		return <Spinner />
+	}
 	return(
 		<div id = {modules.project}>
 		<h2>{name}</h2>

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Papa from 'papaparse';
 import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper} from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
+import Spinner from '../Spinner/Spinner';
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
@@ -23,12 +24,17 @@ const StyledTableRow = withStyles((theme) => ({
 
 const Skills = () => {
 	const[data, setData] = useState([]);
+  const[loading, setLoading] = useState(true);
 	Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQbQo5qr_XthvuHlPlrsWJ2K78AmXHfP93gfX4QY60XvMYCpZ2ebk7gzgZeKCkAIrcu98dOwwAl_HfN/pub?output=csv", {
 		download:true,
 		header:true,
 		complete:(results) => {
+      setLoading(false);
 			setData(results.data);
 		}});
+  if(loading) {
+    return <Spinner />;
+  }
 	return (
     <TableContainer component={Paper} styles = {{overflow: 'scroll'}}>
       <Table aria-label="customized table">
