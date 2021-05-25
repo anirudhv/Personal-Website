@@ -44,10 +44,13 @@ class Project extends Component {
 				target = "_blank">	
 					• 3D Models (Autodesk Maya)
 			</Button>	
-			<h3>Graphic Designs</h3>
-			<div class = "container">
-			<iframe title = "gallery" class = "responsive" src="//www.cincopa.com/media-platform/iframe.aspx?fid=AQBAVduskGmu" frameborder="0" allowfullscreen scrolling="yes">
-			</iframe>
+			<Button color = "secondary" id = "graphics" href = "https://www.cincopa.com/media-platform/iframe.aspx?fid=AQBAVduskGmu#"
+				target = "_blank">	
+					• Graphic Designs
+			</Button>
+			<Button color = "secondary" id = "datavis2" href = "https://web.ics.purdue.edu/~anirudhv/"
+				target = "_blank">	
+					• Data Visualizations
 			<br />
 			<br />
 			</div>
