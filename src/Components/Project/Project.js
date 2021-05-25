@@ -51,6 +51,7 @@ class Project extends Component {
 			<Button color = "secondary" id = "datavis2" href = "https://web.ics.purdue.edu/~anirudhv/"
 				target = "_blank">	
 					• Data Visualizations
+			</Button>
 			<br />
 			<br />
 			</div>
