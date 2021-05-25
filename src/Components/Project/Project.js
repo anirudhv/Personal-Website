@@ -55,7 +55,6 @@ class Project extends Component {
 			<br />
 			<br />
 			</div>
-			</div>
 		);
 	}
 }
