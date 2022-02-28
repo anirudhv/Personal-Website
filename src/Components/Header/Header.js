@@ -47,7 +47,7 @@ const Header = () =>  {
 		        <Button target="_blank" href = "https://github.com/anirudhv"><GitHubIcon color = "action" fontSize = "large" /></Button>
 		        <Button target="_blank" href = "mailto:anirudhv@purdue.edu"><EmailIcon color = "action" fontSize = "large" /></Button>
 		        <Button target="_blank" href = "Anirudh_Resume.pdf"><FilePresentIcon color = "action" fontSize = "large" /></Button>
-		        <Button href = "javascript:;" onClick={handleOpen}><InfoIcon color = "action" fontSize = "large" /></Button>
+		        <Button href = {null} onClick={handleOpen}><InfoIcon color = "action" fontSize = "large" /></Button>
 	     	</ButtonGroup>
 	     	<Modal
         aria-labelledby="transition-modal-title"
