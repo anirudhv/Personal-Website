@@ -1,0 +1,8 @@
+#cards-id {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	float: left;
+	color: #ff0000;
+
+}
