@@ -68,7 +68,9 @@ const Header = () =>  {
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
               Hello! My name is Anirudh Venkataramanan. <br /> I am an undergraduate senior at Purdue University
               majoring in Computer Graphics Technology and minoring in Computer Science and Information Technology.
-              This fall, I will be a first-year Master's student. <br /> I am currently actively looking for summer 2022 internship opportunities.
+              I have been accepted to multiple universities for graduate school, including UC Santa Cruz, Purdue
+              University, University of Maryland - College Park, and Rochester Institute of Technology. I will be a 
+              Master's student starting this fall. <br /> I am currently actively looking for summer 2022 internship opportunities.
             </Typography>
           </Box>
         </Fade>
