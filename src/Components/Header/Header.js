@@ -5,7 +5,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import EmailIcon from '@mui/icons-material/Email';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import FilePresentIcon from '@mui/icons-material/FilePresent';
+import FilePresentIcon from '@mui/icons-material/Summarize';
 import InfoIcon from '@mui/icons-material/Info';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Modal from '@mui/material/Modal';
@@ -46,7 +46,7 @@ const Header = () =>  {
 		        <Button target="_blank" href = "https://twitter.com/anirudhvenky"><TwitterIcon color = "action" fontSize = "large" /></Button>
 		        <Button target="_blank" href = "https://github.com/anirudhv"><GitHubIcon color = "action" fontSize = "large" /></Button>
 		        <Button target="_blank" href = "mailto:anirudhv@purdue.edu"><EmailIcon color = "action" fontSize = "large" /></Button>
-		        <Button target="_blank" href = "Anirudh_Resume.pdf"><FilePresentIcon color = "action" fontSize = "large" /></Button>
+		        <Button target="_blank" href = "Anirudh_Resume.pdf"><SummarizeIcon color = "action" fontSize = "large" /></Button>
 		        <Button href = {null} onClick={handleOpen}><InfoIcon color = "action" fontSize = "large" /></Button>
 	     	</ButtonGroup>
 	     	<Modal
