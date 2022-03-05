@@ -5,7 +5,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import EmailIcon from '@mui/icons-material/Email';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import FilePresentIcon from '@mui/icons-material/Summarize';
+import SummarizeIcon from '@mui/icons-material/Summarize';
 import InfoIcon from '@mui/icons-material/Info';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Modal from '@mui/material/Modal';
