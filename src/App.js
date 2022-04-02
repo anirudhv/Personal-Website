@@ -11,9 +11,13 @@ import BadFellas from './Components/Projects/BadFellas';
 import MentalHealth from './Components/Projects/MentalHealth';
 import TableauVisualizations from './Components/Projects/TableauVisualizations';
 import TornadoSimulation from './Components/Projects/TornadoSimulation';
+import MP3Player from './Components/Projects/MP3Player';
+import PurdueApps from './Components/Projects/PurdueApps';
+import TAZDevelopers from './Components/Projects/TAZDevelopers';
 import {Routes, Route} from 'react-router-dom';
 import Footer from 'rjs-sticky-footer/Footer';
 import FooterBody from './Components/Footer/FooterBody';
+
 const App = () => {
   const projectList = [{
       name: "Culinary Clicks",
@@ -24,6 +28,24 @@ const App = () => {
       component: CulinaryClicks,
       description: "Food Photo Gallery Full-Stack Website."
     },
+        {
+      name: "TAZ Developers",
+      id: "tazdevelopers",
+      url: "/taz-developers",
+      image: "tazdevelopers.jpg",
+      category: "Technical",
+      component: TAZDevelopers,
+      description: "Single Page Front-End website for my undergraduate senior year project team."
+    },
+    {
+      name: "Purdue Apps",
+      id: "purdueapps",
+      url: "/purdue-apps",
+      image: "purdueapps.jpg",
+      category: "Technical",
+      component: PurdueApps,
+      description: "Front-End website showcasing mobile apps that are useful for Purdue University students."
+    },
     {
       name: "Location Tracker",
       id: "locationtracker",
@@ -33,6 +55,14 @@ const App = () => {
       component: LocationTracker,
       description: "Android App that tracks the user's location as they move and shows markings of all tracked locations on a map."
     },
+    { name: "MP3 Player",
+      id: "mp3player",
+      url: "/mp3-player",
+      image: "mp3player.jpg",
+      category: "Technical",
+      component: MP3Player,
+      description: "MP3 Player Android App."
+    },
     {
       name: "Tableau Visualizations",
       id: "tableauvisualizations",
@@ -40,7 +70,7 @@ const App = () => {
       image: "tableauvisualizations.jpg",
       category: "Interpretive",
       component: TableauVisualizations,
-      description: "Showcase of two data visualizations made with Tableau."
+      description: "Sub-portfolio showing my proficiency in Tableau and knowledge of the data visualization process."
     },
     {
       name: "Memory Chef",
@@ -94,7 +124,7 @@ const App = () => {
       image: "mentalhealthpurdue.jpg",
       category: "Interpretive",
       component: MentalHealth,
-      description: "White Paper analyzing why college students need mental health help more than others during the pandemic, the problems that exist within Purdue University's mental health resources, what other mental health resources offer that Purdue does not, and how Purdue University can improve their mental health resources."
+      description: "White Paper discussing mental health issues and resources at both Purdue University and the world at large."
     }];
 
   return (

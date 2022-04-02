@@ -37,7 +37,7 @@ const LocationTracker = (props) => (
 				<Button href = "LocationTracker.apk" download variant="contained" endIcon={<FileDownloadIcon />}>
 					Download Location Tracker APK File
 				</Button>
-				<Button href = "https://youtu.be/y6vNZhB5uoI" target = "_blank"variant="contained" endIcon={<YouTubeIcon />}>
+				<Button href = "https://youtu.be/y6vNZhB5uoI" target = "_blank" variant="contained" endIcon={<YouTubeIcon />}>
 					View Video Demo
 				</Button>				
 				<Button href = "https://github.com/anirudhv/LocationTracker" target = "_blank" variant="contained" endIcon={<GitHubIcon />}>
