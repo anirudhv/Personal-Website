@@ -25,6 +25,7 @@ const TableauVisualizations = (props) => (
 				<ul>Postcards I have designed</ul>
 				<ul>Research projects I have completed to provide insights on different topics</ul>
 				<ul>Some of the best Tableau visualizations I have created</ul>
+			</li>
 		</Typography>
 			<hr />
 			<br />
