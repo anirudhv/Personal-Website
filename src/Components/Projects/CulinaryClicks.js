@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import GitHubIcon from '@mui/icons-material/GitHub';
+
 const CulinaryClicks = (props) => (
 	<>
 		<Typography variant = "h4" gutterBottom component = "div">
