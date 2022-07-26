@@ -14,6 +14,7 @@ import TornadoSimulation from './Components/Projects/TornadoSimulation';
 import MP3Player from './Components/Projects/MP3Player';
 import PurdueApps from './Components/Projects/PurdueApps';
 import TAZDevelopers from './Components/Projects/TAZDevelopers';
+import UnitConverter from './Components/Projects/UnitConverter';
 import {Routes, Route} from 'react-router-dom';
 import Footer from 'rjs-sticky-footer/Footer';
 import FooterBody from './Components/Footer/FooterBody';
@@ -62,6 +63,14 @@ const App = () => {
       category: "Technical",
       component: MP3Player,
       description: "MP3 Player Android App."
+    },
+    { name: "Unit Converter",
+      id: "unitconverter",
+      url: "/unit-converter",
+      image: "unitconverter.jpg",
+      category: "Technical",
+      component: UnitConverter,
+      description: "Unit Converter Android App."
     },
     {
       name: "Tableau Visualizations",
