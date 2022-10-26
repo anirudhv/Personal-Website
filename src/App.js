@@ -44,7 +44,7 @@ const App = () => {
       name: "HTML and JavaScript Data Visualizations",
       id: "web-data-visualizatons",
       url: "/web-data-visualizatons",
-      image: "webdatavisualizatons.jpg",
+      image: "webdatavisualizations.jpg",
       category: "Technical",
       component: WebDataVisualizations,
       description: "A collection of HTML, static JavaScript, and interactive JavaScript data visualizations."

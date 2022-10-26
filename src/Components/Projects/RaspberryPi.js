@@ -17,7 +17,6 @@ const RaspberryPi = (props) => (
 		</Typography>
 		<Typography variant = "body1" gutterBottom component = "div" align = "left" style = {{margin: "10px"}}>
 		The video demo for this project includes the connection of the project to the Raspberry Pi architecture, the tutorials used to complete the project, troubleshooting information, a demo of the project, and a reflection.
-		<br /><br />
 		</Typography>
 		<hr />
 		<br />
