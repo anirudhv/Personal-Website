@@ -5,7 +5,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-const PurdueApps = (props) => (
+const WebDataVisualizations = (props) => (
 	<>
 		<Typography variant = "h4" gutterBottom component = "div">
 			{props.name} 
