@@ -15,6 +15,8 @@ import MP3Player from './Components/Projects/MP3Player';
 import PurdueApps from './Components/Projects/PurdueApps';
 import TAZDevelopers from './Components/Projects/TAZDevelopers';
 import UnitConverter from './Components/Projects/UnitConverter';
+import RaspberryPi from './Components/Projects/RaspberryPi';
+import WebDataVisualizations from './Components/Projects/WebDataVisualizations';
 import {Routes, Route} from 'react-router-dom';
 import Footer from 'rjs-sticky-footer/Footer';
 import FooterBody from './Components/Footer/FooterBody';
@@ -29,7 +31,7 @@ const App = () => {
       component: CulinaryClicks,
       description: "Food Photo Gallery Full-Stack Website."
     },
-        {
+    {
       name: "TAZ Developers",
       id: "tazdevelopers",
       url: "/taz-developers",
@@ -37,6 +39,15 @@ const App = () => {
       category: "Technical",
       component: TAZDevelopers,
       description: "Single Page Front-End website for my undergraduate senior year project team."
+    },
+    {
+      name: "HTML and JavaScript Data Visualizations",
+      id: "web-data-visualizatons",
+      url: "/web-data-visualizatons",
+      image: "webdatavisualizatons.jpg",
+      category: "Technical",
+      component: WebDataVisualizations,
+      description: "A collection of HTML, static JavaScript, and interactive JavaScript data visualizations."
     },
     {
       name: "Purdue Apps",
@@ -84,11 +95,20 @@ const App = () => {
     {
       name: "Memory Chef",
       id: "memorychef",
-      url: "memory-chef",
+      url: "/memory-chef",
       image: "memorychef.jpg",
       category: "Technical",
       component: MemoryChef,
       description: "Desktop Game that has players memorize a pizza order under a timer and then create that pizza from scratch."
+    },
+    {
+      name: "Raspberry Pi Web Server and NAS Server",
+      id: "raspberry-pi-web-server-nas-server",
+      url: "/raspberry-pi-web-server-nas-server",
+      image: "raspberrypiwebservernasserver.jpg",
+      category: "Technical",
+      component: RaspberryPi,
+      description: "Raspberry Pi with fully functional Web Server, NAS Server, and Sensors. Python program that shows the capabilities of the servers and sensors."
     },
     {
       name: "Realistic Tornado Simulation Visualization",
