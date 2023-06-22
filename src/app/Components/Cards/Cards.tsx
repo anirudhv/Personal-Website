@@ -1,8 +1,12 @@
 "use-client"
 import React from 'react';
 import IndividualCard from './IndividualCard/IndividualCard';
-const Cards = (props)=> {
-	console.log(props.projects);
+
+interface Props {
+   projects: Array<Object>;
+}
+
+const Cards = (props: Props)=> {
 	const proj = Array.from(props.projects);
 	return (
 			<div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", margin: "2%", justifyContent: "center"}}> 

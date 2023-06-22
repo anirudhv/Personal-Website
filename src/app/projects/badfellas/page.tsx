@@ -1,12 +1,11 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
+import Image from 'next/image';
 const BadFellas = (props) => (
 	<div>
 		<Typography variant = "h4" gutterBottom component = "div">
-			{props.name} 
 		</Typography>
 		<Typography variant = "h5" gutterBottom component = "div">
-			{props.category + " Project"} 
 		</Typography>
 		<hr />
 		<Typography variant = "h6" gutterBottom component = "div">
@@ -23,8 +22,8 @@ const BadFellas = (props) => (
 		of my body that were visible. I applied a black and white filter to my faces and moved them on top
 		of the faces of the actors in the movie poster with the corresponding facial expressions and positons.
 		<br />
-		As a final touch, I changed the title of the movie poster to <i>BadFellas</i> and changed the filmmaker's
-		name from Martin Scorsese to my name. After all, <i>BadFellas</i> is my own creation.
+		As a final touch, I changed the title of the movie poster to <i>BadFellas</i> and changed the filmmaker
+		name to my name. After all, <i>BadFellas</i> is my own creation.
 		<br /> 
 		Below, you can see my <i>BadFellas</i> movie poster and compare it with the original <i>GoodFellas</i> poster.
 		</Typography>
@@ -35,7 +34,7 @@ const BadFellas = (props) => (
 					BadFellas Poster
 				</div>
 			</Typography>
-			<img src = "BadFellas_Full.png" alt = "BadFellas Poster" width = "35%" />
+			<Image src = "BadFellas_Full.png" alt = "BadFellas Poster" width = "35%" />
 		</div>
 		<div>
 			<Typography variant = "buttonText" gutterBottom component = "div">
@@ -43,7 +42,7 @@ const BadFellas = (props) => (
 					Original GoodFellas Poster
 				</div>
 			</Typography>
-			<img src = "GoodFellas.jpg" alt = "Original GoodFellas Poster" width = "35%" />
+			<Image src = "GoodFellas.jpg" alt = "Original GoodFellas Poster" width = "35%" />
 		</div>
 	</div>
 );

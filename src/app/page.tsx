@@ -1,6 +1,6 @@
 "use client"
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from 'next/image';
+import styles from './page.module.css';
 import Navigation from './Components/Navigation/Navigation';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
@@ -15,7 +15,7 @@ const Home = () => {
     <div>
       <Navigation />
       <div id={styles.home}>
-            <img
+            <Image
               alt="Anirudh Venkataramanan"
               src="photo.jpg"
               id={styles.photo}
