@@ -1,0 +1,44 @@
+#container {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+#home {
+  display:flex;
+  flex-direction:row-reverse;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  margin:5%;
+  object-fit:contain;
+  font-family: 'Inter', sans-serif;
+  font-size:2.5vw;
+}
+
+@media(orientation:portrait)  {
+  #home {
+    flex-direction:column;
+    font-size:5vw;
+  }
+}
+
+#photo {
+  max-width:30%;
+  max-height:20%;
+}
+
+#buttons{
+  margin-top:5%;
+}
+
+#inner-container {
+  display:flex;
+  flex-direction:column;
+}
+
+.black {
+  color:#000000;
+}
