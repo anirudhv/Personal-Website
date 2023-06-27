@@ -23,7 +23,11 @@ import Drawer from '@mui/material/Drawer';
 
 const pages = ['Home', 'About Me', 'Projects', 'Skills', 'Awards'];
 
-const ResponsiveAppBar = (props) => {
+interface Props {
+  window?: () => Window;
+}
+
+const Navigation = (props: Props) => {
   // const [anchorElNav, setAnchorElNav] = useState(null);
 
   // const handleOpenNavMenu = (event) => {
@@ -149,6 +153,7 @@ const ResponsiveAppBar = (props) => {
             <Menu
               sx={{ mt: '45px' }}
               id="menu-appbar"
+              open={mobileOpen}
               keepMounted
               transformOrigin={{
                 vertical: 'top',
@@ -162,4 +167,4 @@ const ResponsiveAppBar = (props) => {
     </AppBar>
   );
 }
-export default ResponsiveAppBar;
+export default Navigation;

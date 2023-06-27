@@ -2,14 +2,12 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import styles from './page.module.css';
 import Navigation from '../Components/Navigation/Navigation';
-import Project from './project.tsx';
-import Typography from '@mui/material/Typography';
 import Dropdown from '../Components/Dropdown/Dropdown';
 import Cards from '../Components/Cards/Cards';
 import { orderBy, shuffle, isEmpty } from 'lodash';
 
 const Projects = () => {
-  const projectList = useMemo(()=>
+  const projectList =
     [{
         name: "Culinary Clicks",
         id: "culinaryclicks",
@@ -135,22 +133,23 @@ const Projects = () => {
         image: "mentalhealthpurdue.jpg",
         category: "Interpretive",
         description: "White Paper discussing mental health issues and resources at both Purdue University and the world at large."
-      }]);
+      }];
 
   const [projects, setProjects] = useState(projectList);
   const [sort, setSort] = useState('');
   const [category, setCategory] = useState([]);
   const reason = useRef('');
 
-  const sortChange = (event) => {
+  const sortChange = (event: any) => {
     reason.current = 'sort';
-    setSort(event.target.value);
+    console.log(event.target.value)
+    setSort((event.target).value);
   }
-  const categoryChange = (event) => {
+  const categoryChange = (event: any) => {
     reason.current = 'category';
     setCategory(event.target.value);
   }
-  const categoryDelete = (event, val) => {
+  const categoryDelete = (event: any, val: string) => {
     reason.current = 'category';
     setCategory(category.filter(cat => cat !== val));
   }
@@ -180,8 +179,8 @@ const Projects = () => {
       return listOfProjects;
     }
 
-    const checkCategory = (projs) => {
-      const newList = [];
+    const checkCategory = (projs: any[]) => {
+      const newList: any[] = [];
       if(!isEmpty(category)) {
         projs.map((proj) => {
           category.map((cat) => {

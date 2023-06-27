@@ -3,7 +3,7 @@ import React from 'react';
 import IndividualCard from './IndividualCard/IndividualCard';
 
 interface Props {
-   projects: Array<Object>;
+   projects: Array<any>;
 }
 
 const Cards = (props: Props)=> {

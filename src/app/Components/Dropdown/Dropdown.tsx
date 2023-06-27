@@ -8,7 +8,16 @@ import Box from '@mui/material/Box';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import Chip from '@mui/material/Chip';
 
-const Dropdown = (props) => {
+interface Props {
+	data: Array<any>;
+	changeCategory: (event: any) => void;
+	changeSort: (event: any) => void;
+	sort: string;
+	category: Array<string>;
+	deleteCategory: (event: any, val: any) => void;
+}
+
+const Dropdown = (props: Props) => {
 	const categories = props.data.map(proj => proj.category);
 	const uniqueCategories = [...new Set(categories)];
 	const ITEM_HEIGHT = 48;

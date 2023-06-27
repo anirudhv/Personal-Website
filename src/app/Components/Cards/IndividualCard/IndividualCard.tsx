@@ -7,7 +7,17 @@ import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import Link from 'next/link';
 
-const IndividualCard = (props) => {
+interface Props {
+   key: string;
+   id: string;
+   image: string;
+   name: string;
+   category: string;
+   description: string;
+   url: string;
+}
+
+const IndividualCard = (props: Props) => {
 	// const doOnClick = (url) => {
 	// 	navigate(url);
 	// } 
@@ -22,7 +32,7 @@ const IndividualCard = (props) => {
 			          image = {props.image}
 			          alt = {props.id}
 			        />
-			        <CardContent styles={{backgroundColor:'black', textColor:'white'}}>
+			        <CardContent>
 			          <Typography gutterBottom variant="h5" component="div">
 			            {props.name}
 			          </Typography>
