@@ -15,7 +15,7 @@ const Home = () => {
     <div>
       <Navigation />
       <div id={styles.home}>
-            <img
+            <Image
               alt="Anirudh Venkataramanan"
               src="photo.jpg"
               id={styles.photo}
