@@ -28,8 +28,8 @@ const BadFellas = () => (
 		of my body that were visible. I applied a black and white filter to my faces and moved them on top
 		of the faces of the actors in the movie poster with the corresponding facial expressions and positons.
 		<br />
-		As a final touch, I changed the title of the movie poster to <i>BadFellas</i> and changed the filmmaker's
-		name from Martin Scorsese to my name. After all, <i>BadFellas</i> is my own creation.
+		As a final touch, I changed the title of the movie poster to <i>BadFellas</i> and changed the filmmaker
+		name to my name. After all, <i>BadFellas</i> is my own creation.
 		<br /> 
 		Below, you can see my <i>BadFellas</i> movie poster and compare it with the original <i>GoodFellas</i> poster.
 		</Typography>
