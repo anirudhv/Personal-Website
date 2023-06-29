@@ -3,4 +3,3 @@
   publish = "build"
 
 [[plugins]]
-  package = "@netlify/plugin-nextjs"
