@@ -20,8 +20,10 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Drawer from '@mui/material/Drawer';
+import Link from 'next/link';
 
 const pages = ['Home', 'About Me', 'Projects', 'Skills', 'Awards'];
+const urls = ["/", "about", "projects", "skills", "awards"];
 
 interface Props {
   window?: () => Window;
@@ -53,12 +55,15 @@ const Navigation = (props: Props) => {
       </Typography>
       <Divider />
       <List>
-        {pages.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
+        {pages.map((item, key) => (
+          <Link key={item} href={urls[key]}>
+
+            <ListItem disablePadding>
+              <ListItemButton sx={{ textAlign: 'center' }}>
+                <ListItemText primary={item} />
+              </ListItemButton>
+            </ListItem>
+          </Link>
         ))}
       </List>
     </Box>
@@ -135,13 +140,15 @@ const Navigation = (props: Props) => {
             ANIRUDH VENKATARAMANAN
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {pages.map((page, key) => (
               <Button
                 key={page}
                 onClick={handleDrawerToggle}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                <Link href={urls[key]}>
+                  {page}
+                </Link>
               </Button>
             ))}
           </Box>
@@ -150,7 +157,7 @@ const Navigation = (props: Props) => {
               <IconButton sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="photo.jpg" />
               </IconButton>
-            <Menu
+           {/* <Menu
               sx={{ mt: '45px' }}
               id="menu-appbar"
               open={mobileOpen}
@@ -160,7 +167,7 @@ const Navigation = (props: Props) => {
                 horizontal: 'right',
               }}
             >
-            </Menu>
+            </Menu> */}
           </Box>
         </Toolbar>
       </Container>
