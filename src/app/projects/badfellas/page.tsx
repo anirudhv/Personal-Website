@@ -2,10 +2,9 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import Navigation from '../../Components/Navigation/Navigation';
-import styles from '../../globals.css';
 
 const BadFellas = () => (
-	<div className={styles.centerContent}>
+	<div>
 		<Navigation />
 		<Typography variant = "h4" gutterBottom component = "div">
 			BadFellas
