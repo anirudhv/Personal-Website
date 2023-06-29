@@ -32,23 +32,6 @@ const BadFellas = () => (
 		<br /> 
 		Below, you can see my <i>BadFellas</i> movie poster and compare it with the original <i>GoodFellas</i> poster.
 		</Typography>
-		<hr />
-		<div>
-			<Typography variant = "buttonText" gutterBottom component = "div">
-				<div style = {{fontWeight: "bold"}}>
-					BadFellas Poster
-				</div>
-			</Typography>
-			<img src = "BadFellas_Full.png" alt = "BadFellas Poster" width = "35%" />
-		</div>
-		<div>
-			<Typography variant = "buttonText" gutterBottom component = "div">
-				<div style = {{fontWeight: "bold"}}>
-					Original GoodFellas Poster
-				</div>
-			</Typography>
-			<img src = "GoodFellas.jpg" alt = "Original GoodFellas Poster" width = "35%" />
-		</div>
 	</div>
 );
 
