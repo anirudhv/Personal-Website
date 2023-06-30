@@ -6,10 +6,6 @@ import FooterContent from './Components/FooterContent/FooterContent';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Anirudh Venkataramanan',
-  description: 'Anirudh Venkataramanan website',
-}
 
 export default function RootLayout({
   children,
