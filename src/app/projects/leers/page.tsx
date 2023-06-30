@@ -26,7 +26,7 @@ const Leers = () => {
 			<div>
 				<ButtonGroup variant="contained" aria-label="outlined primary button group">
 					<Button href = "https://leers.netlify.app/" target="_blank" variant="contained" endIcon={<OpenInNewIcon />}>
-						View Purdue Apps Website
+						Play Leers
 					</Button>
 					<Button href = "https://github.com/anirudhv/leers" target = "_blank" variant="contained" endIcon={<GitHubIcon />}>
 						View Frontend Code
