@@ -30,7 +30,7 @@ const Home = () => {
                 <Button size="large" color="success" href="https:/github.com/anirudhv" target="_blank"><GitHubIcon /></Button>
                 <Button size="large" href="https://twitter.com/anirudhvenky/" target="_blank"><TwitterIcon /></Button>
               </div>
-              <Button size="large" href="/" target="_blank" color="error"><PictureAsPdfIcon /><span className={styles.black}>View my Resume</span></Button>
+              <Button size="large" href="/Anirudh_Resume.pdf" target="_blank" color="error"><PictureAsPdfIcon /><span className={styles.black}>View my Resume</span></Button>
               <Button size="large" href="/Anirudh_Certificates.pdf" target="_blank" color="error"><PictureAsPdfIcon /><span className={styles.black}>View my Certificates</span></Button>            
             </div>
         </div>
