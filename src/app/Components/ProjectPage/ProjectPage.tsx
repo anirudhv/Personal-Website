@@ -6,6 +6,11 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from 'next/link';
 
+interface Props {
+   name: string;
+   content: React.ReactNode;
+}
+
 const projectList =
 {"Culinary Clicks": {
     name: "Culinary Clicks",
@@ -136,7 +141,7 @@ const projectList =
     description: "White Paper discussing mental health issues and resources at both Purdue University and the world at large."
   }};
 
-const ProjectPage = (props) => {
+const ProjectPage = (props: Props) => {
 	const data = projectList[props.name];
 	const breadcrumbs = [
 		<Link underline="hover" key="1" color="inherit" href="/projects">
