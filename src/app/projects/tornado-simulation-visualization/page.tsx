@@ -27,7 +27,7 @@ const TornadoSimulation = () => {
 				</ButtonGroup>
 				<br />
 				<img src = "/TornadoBoard.jpg" alt = "Reference Images" width = "75%" />
-				<Typography variant = "captionText" gutterBottom component = "div" align = "center" style = {{margin: "10px"}}>
+				<Typography variant = "caption" gutterBottom component = "div" align = "center" style = {{margin: "10px"}}>
 					My Pipeline Browser and Animation View for this Project in Paraview
 				</Typography>
 			</div>
