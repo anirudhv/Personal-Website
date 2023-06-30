@@ -19,6 +19,8 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import Drawer from '@mui/material/Drawer';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'
+
 
 const pages = ['Home', 'Projects'];
 const urls = ["/", "/projects"];
@@ -28,6 +30,10 @@ interface Props {
 }
 
 const Navigation = (props: Props) => {
+
+  const pathname = usePathname();
+
+  console.log("pathname " + pathname)
 
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -133,7 +139,7 @@ const Navigation = (props: Props) => {
                 key={page}
                 href={urls[key]}
                 onClick={handleDrawerToggle}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: pathname === urls[key] || pathname.includes(urls[key] + "/") ? 'yellow' : 'white', display: 'block' }}
               >
                   {page}
               </Button>
