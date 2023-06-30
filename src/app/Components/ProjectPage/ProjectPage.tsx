@@ -144,7 +144,7 @@ const projectList =
 const ProjectPage = (props: Props) => {
 	const data = projectList[props.name];
 	const breadcrumbs = [
-		<Link underline="hover" key="1" color="inherit" href="/projects">
+		<Link key="1" color="inherit" href="/projects">
       		Projects
     	</Link>,
 	    <Typography key="2" color="text.primary">
