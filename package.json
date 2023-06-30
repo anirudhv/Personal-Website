@@ -13,6 +13,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.0",
+    "@jam3/detect": "^2.0.5",
     "@mui/icons-material": "latest",
     "@mui/material": "^5.13.6",
     "@mui/styled-engine-sc": "^5.12.0",
@@ -27,7 +28,9 @@
     "lodash": "latest",
     "next": "latest",
     "react": "latest",
+    "react-device-detect": "^2.2.3",
     "react-dom": "latest",
+    "rjs-sticky-footer": "^0.0.2",
     "styled-components": "^5.3.11",
     "typescript": "latest"
   },
