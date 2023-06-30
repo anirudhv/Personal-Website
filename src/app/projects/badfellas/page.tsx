@@ -24,7 +24,7 @@ const BadFellas = () => {
 			</Typography>
 			<hr />
 			<div>
-				<Typography variant = "buttonText" gutterBottom component = "div">
+				<Typography variant = "button" gutterBottom component = "div">
 					<div style = {{fontWeight: "bold"}}>
 						BadFellas Poster
 					</div>
@@ -32,7 +32,7 @@ const BadFellas = () => {
 				<img src = "/BadFellas_Full.png" alt = "BadFellas Poster" width = "35%" />
 			</div>
 			<div>
-				<Typography variant = "buttonText" gutterBottom component = "div">
+				<Typography variant = "button" gutterBottom component = "div">
 					<div style = {{fontWeight: "bold"}}>
 						Original GoodFellas Poster
 					</div>
