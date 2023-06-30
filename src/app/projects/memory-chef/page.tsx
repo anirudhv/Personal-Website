@@ -42,7 +42,7 @@ const MemoryChef = () => {
 	);
 	return(
 		<ProjectPage
-			name="MemoryChef"
+			name="Memory Chef"
 			content={inner}
 		/>
 	);

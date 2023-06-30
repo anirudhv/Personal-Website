@@ -9,8 +9,6 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import Footer from 'rjs-sticky-footer/Footer';
-import FooterContent from './Components/FooterContent/FooterContent';
 
 const Home = () => {
   return(
@@ -36,12 +34,6 @@ const Home = () => {
               <Button size="large" href="/Anirudh_Certificates.pdf" target="_blank" color="error"><PictureAsPdfIcon /><span className={styles.black}>View my Certificates</span></Button>            
             </div>
         </div>
-        <Footer
-        background={'#000000'}
-        opacity={1}
-        footerBody={<FooterContent/>}
-        isSticky={true}
-        />
       </div>
   );
 }

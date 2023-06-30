@@ -147,7 +147,7 @@ const ProjectPage = (props: Props) => {
 		<Link key="1" color="inherit" href="/projects">
       		Projects
     	</Link>,
-	    <Typography key="2" color="text.primary">
+	    <Typography key="2" color="primary">
 	      {data.name}
 	    </Typography>
 	];

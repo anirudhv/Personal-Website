@@ -31,7 +31,6 @@
     "react": "latest",
     "react-device-detect": "^2.2.3",
     "react-dom": "latest",
-    "rjs-sticky-footer": "^0.0.2",
     "styled-components": "^5.3.11",
     "typescript": "latest"
   },
