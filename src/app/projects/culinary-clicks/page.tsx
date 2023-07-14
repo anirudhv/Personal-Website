@@ -53,7 +53,7 @@ const CulinaryClicks = () => {
 	);
 	return (
 		<ProjectPage
-			name="BadFellas"
+			name="Culinary Clicks"
 			content={inner}
 		/>
 	);
