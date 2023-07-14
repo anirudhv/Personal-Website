@@ -165,7 +165,7 @@ const ProjectPage = (props: Props) => {
 				{data.name} 
 			</Typography>
 			<Typography variant = "h5" gutterBottom component = "div">
-				{data.category + "Project"}
+				{data.category + " Project"}
 			</Typography>
 			<hr />
 			<Typography variant = "h6" gutterBottom component = "div">
