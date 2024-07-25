@@ -12,13 +12,14 @@ interface Props {
 }
 
 const projectList =
-{"Culinary Clicks": {
-    name: "Culinary Clicks",
-    id: "culinaryclicks",
-    url: "/culinary-clicks",
-    image: "culinaryclicks.jpg",
+{
+  "stability.gpt": {
+    name: "stability.gpt",
+    id: "stability-gpt",
+    url: "/stability-gpt",
+    image: "stability-gpt.jpg",
     category: "Technical",
-    description: "Food Photo Gallery Full-Stack Website."
+    description: "Full-Stack Artificial Intelligence Storybook generator that generates children's storybooks with consistent images accompanying each page."
   },
   "Leers": {
     name: "Leers",

@@ -22,10 +22,12 @@ const Home = () => {
               />
               <div id={styles.container}>
               <span> 
-                <strong>Hello! I am Anirudh Venkataramanan.</strong> I am a <a href="https://grad.soe.ucsc.edu/computational-media" target="_blank">Computational Media</a> Masters student at the <a href="https://ucsc.edu" target="_blank">University of California, Santa Cruz</a>. I will be graduating in September 2022 and am actively looking for full-time positions in the fields of interactive full-stack web development, mobile development, desktop application development, artificial intelligence, and graphics/video production.
+                <strong>Hello! I am Anirudh Venkataramanan.</strong> I am currently an Artificial Intelligence and Data Engineer at <a href="https://www.ibm.com/">IBM</a>. <br /> 
+                I graduated from the <a href="https://www.ucsc.edu/">University of California - Santa Cruz</a> with a Masters degree in <a href="https://engineering.ucsc.edu/departments/computational-media/">Computational Media</a> in December 2023.
+                I previously earned my Bachelors degree in <a href="https://polytechnic.purdue.edu/departments/computer-graphics-technology">Computer and Graphics Technology</a> with minors in Computer Science and Information Technology from from <a href="https://purdue.edu/">Purdue University</a>.                
               </span>
               <div id={styles.innerContainer}>
-                <Button size="large" color="success" href="mailto:anirudh@ucsc.edu" target="_blank"><EmailIcon /></Button>
+                <Button size="large" color="success" href="mailto:anirudh.venky@gmail.com" target="_blank"><EmailIcon /></Button>
                 <Button size="large" href="https://www.linkedin.com/in/anirudhvenkataramanan/" target="_blank"><LinkedInIcon /></Button>
                 <Button size="large" color="success" href="https://github.com/anirudhv" target="_blank"><GitHubIcon /></Button>
                 <Button size="large" href="https://twitter.com/anirudhvenky/" target="_blank"><TwitterIcon /></Button>

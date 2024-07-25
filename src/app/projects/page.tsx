@@ -8,14 +8,15 @@ import { orderBy, shuffle, isEmpty } from 'lodash';
 
 const Projects = () => {
   const projectList =
-    [{
-        name: "Culinary Clicks",
-        id: "culinaryclicks",
-        url: "/culinary-clicks",
-        image: "culinaryclicks.jpg",
-        category: "Technical",
-        description: "Food Photo Gallery Full-Stack Website."
-      },
+    [      
+      {
+      name: "stability.gpt",
+      id: "stability-gpt",
+      url: "/stability-gpt",
+      image: "stability-gpt.jpg",
+      category: "Technical",
+      description: "Full-Stack Artificial Intelligence Storybook generator that generates children's storybooks with consistent images accompanying each page."
+    },
       {
         name: "Leers",
         id: "leers",
